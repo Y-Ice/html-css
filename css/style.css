@@ -333,9 +333,12 @@ ul{
 
 
 @media (max-width: 768px) {
-    .hero-section {
+    .hero-section,
+    .explore-session,
+    .explore-session-text{
         flex-direction: column;
         margin-top: 40px;
+        width: 100%;
     }
     .hero-section .hero-text h1 {
         font-size: 25px;
@@ -346,8 +349,17 @@ ul{
     .hero-section .hero-image {
         margin-top: 20px;
     }
-    .service-cards {
-        display: block;
-        width: 90%;
+    .service-cards,
+    .service-card,
+    .achieve-cards,
+    .achieve-card, footer{
+        /* display: block; */
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
     }
+    .explore-session-text{
+        width: 20px;
+    }
+
 }

@@ -26,8 +26,6 @@ ul{
     align-items: center;
     background-color: #f4f4f47c;
     padding: 20px 8%;
-    position: relative;
-    top: -690px;
 }
 .navbar .nav-links {
     list-style: none;
@@ -90,7 +88,7 @@ ul{
     gap: 20px;
     min-height: 120vh;
     position: relative;
-    top: 0;
+    top: -20px;
 }
 .hero-section .hero-content h1{
     font-size: 50px;
@@ -344,4 +342,47 @@ ul{
     font-size: 13px;
     opacity: 0.7;
     padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        margin-top: 40px;
+        min-height: 150vh;
+    }
+    .hero-section .hero-text h1 {
+        font-size: 25px;
+    }
+    .hero-section .hero-text p {
+        font-size:  15px;
+    }
+    .hero-section .hero-image {
+        margin-top: 20px;
+    }
+    .service-cards,
+    .service-card {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .vision-section, .mission-section,
+    .vision-section-text, .mission-section-text
+    .vision-section-img, .mission-section-img{
+        display: block;
+        width: 100%;
+        justify-content: center;
+    }
+
+
 }
