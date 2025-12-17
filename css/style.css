@@ -24,8 +24,8 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    top: 30px;
+    /* position: relative;
+    top: 30px; */
 }
 .navbar .nav-links {
     list-style: none;
@@ -33,7 +33,7 @@ ul{
     gap: 50px;
 }
 .navbar .nav-links li a {
-    font-size: 16px;
+    font-size: 1rem;
 }
 .navbar .nav-links li #home{
     font-weight: 900;
@@ -45,7 +45,7 @@ ul{
     gap: 30px;
     height: 50px;
     padding: 8px 16px;
-    font-size: 14px;
+    font-size: clamp(1rem, 5vw, 2rem);
 }
 .navbar .nav-buttons .signin{
     font-size: 16px;
@@ -161,7 +161,8 @@ ul{
     gap: 20px;
 }
 .explore-session .explore-session-text{
-    width: 60%;
+    /* width: 60%; */
+    flex: 1;
 }
 .explore-session .explore-session-text h1{
     font-size: 40px;
@@ -180,7 +181,6 @@ ul{
     padding: 20px 30px;
 }
 .explore-session .explore-session-img{
-    width: auto;
     max-width: 430px;
 }
 .explore-session .explore-session-img img{
@@ -201,10 +201,12 @@ ul{
     opacity: 0.8;
 }
 .step-section-text{
-    width: 45%;
+    /* width: 45%; */
+    flex: 1;
 }
 .step-section-img{
-    width: 45%;
+    /* width: 45%; */
+    flex: 1;
 }
 .step-section-img img{
     width: 100%;
@@ -242,7 +244,8 @@ ul{
 .achieve .achieve-cards .achieve-card{
     padding: 50px 20px;
     border-top: 1px solid #ffffff;
-    width: 32%;
+    /* width: 32%; */
+    flex: 1;
 }
 .achieve .achieve-cards .achieve-card h2{
     font-size: 38px;
@@ -333,8 +336,14 @@ ul{
 
 
 @media (max-width: 768px) {
+
+    .nav-links, 
+    .nav-buttons{
+        flex-direction: column;
+    }
+
     .hero-section,
-    .explore-session,
+    .explore-session, .step-section-1, .step-section-2,
     .explore-session-text{
         flex-direction: column;
         margin-top: 40px;
@@ -358,8 +367,8 @@ ul{
         width: 100%;
         margin-bottom: 20px;
     }
-    .explore-session-text{
-        width: 20px;
+    .achieve-card{
+        text-align: center;
     }
 
 }

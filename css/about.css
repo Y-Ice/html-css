@@ -138,7 +138,8 @@ ul{
 }
 .vision-section .vision-section-text {
     padding-right: 20px;
-    width: 53%;
+    /* width: 53%; */
+    flex: 1;
 }
 .vision-section .vision-section-text h2 {
     font-size: 48px;
@@ -152,7 +153,8 @@ ul{
     opacity: 0.9;
 }
 .vision-section .vision-section-img {
-    width: 45%;
+    /* width: 45%; */
+    flex: 1;
 }
 .vision-section .vision-section-img img {
     width: 100%;
@@ -169,14 +171,16 @@ ul{
     margin-bottom: 80px;
 }
 .mission-section .mission-section-img {
-    width: 45%;
+    /* width: 45%; */
+    flex: 1;
 }
 .mission-section .mission-section-img img {
     width: 100%;
 }
 .mission-section .mission-section-text {
     padding-left: 20px;
-    width: 53%;
+    /* width: 53%; */
+    flex: 1;
 }
 .mission-section .mission-section-text h2 {
     font-size: 48px;
@@ -259,7 +263,9 @@ ul{
 }
 .objective-section .objective-section-text .objective-section-1,
 .objective-section .objective-section-text .objective-section-2{
-    width: 45%;
+    /* width: 45%; */
+    flex: 1;
+    padding: 0 20px;
 }
 .objective-section .objective-section-text h2{
     font-size: 24px;
@@ -356,7 +362,14 @@ ul{
 
 
 @media (max-width: 768px) {
-    .hero-section {
+
+    .nav-links, 
+    .nav-buttons{
+        flex-direction: column;
+    }
+
+    .hero-section,
+    .objective-section-text {
         flex-direction: column;
         margin-top: 40px;
         min-height: 150vh;
