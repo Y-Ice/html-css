@@ -364,7 +364,8 @@ ul{
 @media (max-width: 768px) {
 
     .nav-links, 
-    .nav-buttons{
+    .nav-buttons, 
+    .footer-top{
         flex-direction: column;
     }
 
@@ -395,6 +396,10 @@ ul{
         display: block;
         width: 100%;
         justify-content: center;
+    } 
+
+    .footer .footer-right{
+        padding: 40px 8% 40px 8%;
     }
 
 

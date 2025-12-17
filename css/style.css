@@ -371,5 +371,9 @@ ul{
     .achieve-card{
         text-align: center;
     }
+     
+    .footer .footer-right{
+        padding: 40px 8% 40px 8%;
+    }
 
 }
