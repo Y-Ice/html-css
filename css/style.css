@@ -338,7 +338,8 @@ ul{
 @media (max-width: 768px) {
 
     .nav-links, 
-    .nav-buttons{
+    .nav-buttons, 
+    .footer-top{
         flex-direction: column;
     }
 
