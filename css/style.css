@@ -337,10 +337,8 @@ ul{
 
 @media (max-width: 768px) {
 
-    .nav-links, 
-    .nav-buttons, 
-    .footer-top{
-        flex-direction: column;
+    .navbar .nav-links{
+        display: none;
     }
 
     .hero-section,
@@ -371,9 +369,23 @@ ul{
     .achieve-card{
         text-align: center;
     }
+    .footer {
+        flex-direction: column;
+    }
+     
+    .footer .footer-left{
+        padding: 40px 8% 40px 8%;
+        width: 100%;
+    }
      
     .footer .footer-right{
         padding: 40px 8% 40px 8%;
+        width: 100%;
+        border-top-left-radius: 0px;
+        transition: all 0.7s;
+    }
+    .footer .footer-right:hover {
+        border-radius: 150px 10px 200px 10px;
     }
 
 }
